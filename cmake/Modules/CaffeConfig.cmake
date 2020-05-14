@@ -50,11 +50,6 @@ set(Caffe_INCLUDE_DIRS
     $ENV{CAFFEPATH}/build/src
     )
 
-# Our library dependencies
-if(NOT TARGET caffe AND NOT caffe_BINARY_DIR)
-  include("../../cmake/Targets.cmake")
-endif()
-
 # List of IMPORTED libs created by CaffeTargets.cmake
 # These targets already specify all needed definitions and include pathes
 set(Caffe_LINK_DIRECTORIES $ENV{CAFFEPATH}/build/lib 
